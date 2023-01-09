@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="..\assets\css\triple_form.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="..\assets\fonts\css\all.css">
+	
+	<title>TRIPLE FORM</title>
+</head>
+<body>
+	<!-- HEADER -->
+		<div class="header">
+			<h1 class="header_title">TRIPLE FORMS</h1>
+		</div>
+	<!-- /HEADER -->
+	<!-- BODY -->
+		<div class="container">
+			<!-- ACCOUNT -->
+				<div class="account">
+					<!-- ACTION -->
+					<div class="account_action">
+						<div class="account_img">
+							<img src="../assets/img/background2.jpg" width="100%" height="100%">
+							<div class="account_content">
+								<button class="account_button" id="login">
+									<i class="fa fa-solid fa-user"></i>Login</button>
+								<button class="account_button" id="register"><i class="fa fa-solid fa-pen"></i>Register</button>
+								<button class="account_button" id="forget">
+									<i class="fa fa-solid fa-lock"></i>Forgot password ?</button>
+							</div>
+						</div>
+					</div>
+				<!-- /ACTION -->
+				<!-- LOGIN -->
+					<div id="account_login">
+						<div class="login_title">
+							<h1>Login Here</h1>
+						</div>
+						<div class="login_text">
+							<i class="fa fa-light fa-envelope"></i>
+							<input type="email" class = "login_input" name="email" placeholder="Email" id="email">
+						</div>
+						<div class="login_text">
+							<i class="fa fa-regular fa-key"></i>
+							<input type="password" class = "login_input" name="password" placeholder="Password" id="password">
+						</div>
+						<div class="login_action">
+							<input type="submit" onclick="Login()" class="login_submit" name="submit" value="Login" >
+						</div>
+						<div class="login_forget" onclick="ForgotPass()">
+							<a href="#">Forgot Password ?</a>
+						</div>
+					</div>
+				<!-- /LOGIN -->
+				<!-- REGISTER -->
+					<div id="account_register">
+						<div class="login_title">
+							<h1>Register Here</h1>
+						</div>
+						<div class="login_text">
+							<i class="fa fa-regular fa-user"></i>
+							<input type="text" class = "login_input" name="username" placeholder="Username" id="new_username">
+						</div>
+						<div class="login_text">
+							<i class="fa fa-light fa-envelope"></i>
+							<input type="email" class = "login_input" name="email" placeholder="Email" id="new_email">
+						</div>
+						<div class="login_text">
+							<i class="fa fa-regular fa-key"></i>
+							<input type="password" class = "login_input" name="password" placeholder="Password" id="new_password">
+						</div>
+						<div class="login_action">
+							<input type="submit" onclick="Register()" class="login_submit" name="submit" value="Login" >
+						</div>
+						<div class="login_forget" onclick="ForgotPass()">
+							<a href="#">Forgot Password ?</a>
+						</div>
+					</div>
+				<!-- /REGISTER -->
+				<!-- FORGOT PASS -->
+					<div id="account_forgot">
+						<div class="login_title">
+							<h1>Forgot Password</h1>
+						</div>
+						<div class="login_text">
+							<i class="fa fa-light fa-envelope"></i>
+							<input type="email" class = "login_input" name="email" placeholder="Email" id="old_email">
+						</div>
+						<div class="login_text">
+							<i class="fa fa-regular fa-key"></i>
+							<input type="password" class = "login_input" name="password" placeholder="New Password" id="change_password">
+						</div>
+						<div class="login_action">
+							<input type="submit" onclick="Forgot()" class="login_submit" name="submit" value="Change password" >
+						</div>
+					</div>
+				<!-- /FORGOT PASS -->
+			</div>
+			<!-- /ACCOUNT -->
+		</div>
+	<!-- /BODY -->
+	<!-- FOOTER -->
+		<div class="footer">
+			<p>© 2019 Triple Forms. All rights reserved | Design by W3layouts</p>
+		</div>
+	<!-- /FOOTER -->
+	<script type="text/javascript" src="..\javascript\triple_form.js"></script>
+</body>
+</html>

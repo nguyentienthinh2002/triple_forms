@@ -1,0 +1,201 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	line-height: 1.8;
+	font-family: 'Roboto', sans-serif;
+	background-image: url("../img/background3.jpg");
+	background-position: center;
+	background-repeat: no-repeat; 
+	background-size: 100% 100%;
+}
+
+.header_title {
+	text-align: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight:700;
+    letter-spacing: 2px;
+    margin: 20px 0 60px;
+}
+
+.container {
+	min-height:100%;
+	position:relative;
+}
+
+.account {
+	width: 60%;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	position: relative;
+}
+
+.account_action {
+	width: 45%;
+	display: flex;
+	margin-right: 30px;
+}
+
+.account_img {
+	position: relative;
+}
+
+.account_content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.account_button {
+	height: 33.333%;
+	border:none;
+	cursor: pointer;
+}
+
+.account_button i {
+	width: 100%;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#login.open {
+	background: #1f9e44;
+	color: #fff;
+}
+
+#register.open {
+	background: #1f9e44;
+	color: #fff;
+}
+
+#forget.open {
+	background: #1f9e44;
+	color: #fff;
+}
+
+
+#account_login {
+	background:#fff;
+	padding:20px;
+	width:55%;
+	display: none;
+}
+
+#account_register {
+	background:#fff;
+	padding:20px;
+	width:55%;
+	display: none;
+}
+
+#account_forgot {
+	background:#fff;
+	padding:20px;
+	width:55%;
+	display: none;
+}
+
+#account_login.show {
+	display: block;
+}
+
+#account_register.show {
+	display: block;
+}
+
+#account_forgot.show {
+	display: block;
+}
+
+.login_title {
+	text-align: center;
+	font-size:10px;
+	margin-bottom: 15px;
+}
+
+.login_title h1 {
+	font-weight: 400;
+}
+
+.login_text {
+	padding:5px 0;
+	position: relative;
+}
+
+.login_text i {
+	position: absolute;
+	padding: 10px;
+	display: inline-block;
+}
+
+.login_input {
+	background-color: #E7E9EB;
+	border: none;
+	width:100%;
+	height:35px;
+	padding: 0 40px;
+}
+
+.login_input:focus {
+	outline: none;
+}
+
+.login_action {
+	padding: 15px 0;
+	cursor: pointer;
+}
+
+.login_submit {
+	background-color: #1f9e44;
+	width: 100%;
+	border: none;
+	color:#fff;
+	height:35px;
+}
+
+.login_forget {
+	margin-top: 10px;
+	text-align: center;
+	font-size: 10px;
+	letter-spacing: 1px;
+}
+
+.login_forget a {
+	color: rgb(120, 120, 120);
+	text-decoration: none;
+}
+
+.login_forget a:hover {
+	color: rgb(255, 99, 71);
+	text-decoration:underline;
+	text-decoration-color:rgb(255, 99, 71) ;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 25%;
+    padding: 15px 0;
+    font-size: 12px;
+    letter-spacing: 0.2px;
+}
+
+.footer p {
+	text-align: center;
+	color:#fff;
+}
