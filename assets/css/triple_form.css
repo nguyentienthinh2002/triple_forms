@@ -32,7 +32,7 @@ body {
 }
 
 .account {
-	width: 60%;
+	width: 75%;
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-left: auto;
@@ -45,7 +45,7 @@ body {
 	width: 45%;
 	display: flex;
 	margin-right: 30px;
-	height:274px;
+	height:310px;
 }
 
 .account_img {
@@ -59,33 +59,44 @@ body {
     top: 0;
     bottom: 0;
     right: 0;
+    text-align: center;
 }
 
-.account_button {
-	height: 33.333%;
+.account_label {
+	display:block;
+	width:170px;
+	height:33.333%;
+}
+
+.account_label > input {
+	visibility: hidden;
+	position: absolute;
+
+}
+
+.account_label > input + div {
+	
 	border:none;
-	cursor: pointer;
+	cursor:pointer;
+	height:100%;
+	width:100%;
+	background-color: #fff;
 }
 
-.account_button i {
+.account_label > input:checked + div {
+	background: #1f9e44;
+	color: #fff;
+
+}
+
+.account_check {
+	padding:10px;
+}
+
+.account_check i {
 	width: 100%;
     font-size: 25px;
     margin-bottom: 10px;
-}
-
-#login.open {
-	background: #1f9e44;
-	color: #fff;
-}
-
-#register.open {
-	background: #1f9e44;
-	color: #fff;
-}
-
-#forget.open {
-	background: #1f9e44;
-	color: #fff;
 }
 
 
@@ -114,13 +125,6 @@ body {
 	display: block;
 }
 
-#account_register.show {
-	display: block;
-}
-
-#account_forgot.show {
-	display: block;
-}
 
 .login_title {
 	text-align: center;
@@ -133,7 +137,7 @@ body {
 }
 
 .login_text {
-	padding:5px 0;
+	padding:10px 0;
 	position: relative;
 }
 
@@ -147,7 +151,7 @@ body {
 	background-color: #E7E9EB;
 	border: none;
 	width:100%;
-	height:35px;
+	height:40px;
 	padding: 0 40px;
 }
 
@@ -165,7 +169,7 @@ body {
 	width: 100%;
 	border: none;
 	color:#fff;
-	height:35px;
+	height:40px;
 }
 
 .login_forget {
@@ -190,7 +194,7 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 25%;
+    height: 15%;
     padding: 15px 0;
     font-size: 12px;
     letter-spacing: 0.2px;

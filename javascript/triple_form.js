@@ -1,43 +1,55 @@
 var x = document.getElementById("account_login");
 var y = document.getElementById("account_register");
 var z = document.getElementById("account_forgot");
-var btn_action = document.getElementById("login");
-btn_action.onclick = function() {
-	btn_action.classList.toggle("open");
-	btn_action2.classList.remove("open");
-	btn_action3.classList.remove("open");
-		x.classList.toggle("show");
-		y.classList.remove("show");
-		z.classList.remove("show");
+
+function CheckLogin() {
+	var check = document.getElementById("login");
+	if(check.checked == true) {
+		x.style.display = "block";
+		y.style.display = "none";
+		z.style.display = "none";
+	}
+	else {
+		x.style.display = "none";
+		y.style.display = "none";
+		z.style.display = "none";
+	}
 }
 
-var btn_action2 = document.getElementById("register");
-btn_action2.onclick = function() {
-	btn_action2.classList.toggle("open");
-	btn_action.classList.remove("open");
-	btn_action3.classList.remove("open");
-		y.classList.toggle("show");
-		x.classList.remove("show");
-		z.classList.remove("show");
+function CheckRegister() {
+	var check = document.getElementById("register");
+	if(check.checked == true) {
+		y.style.display = "block";
+		x.style.display = "none";
+		z.style.display = "none";
+	}
+	else {
+		x.style.display = "none";
+		y.style.display = "none";
+		z.style.display = "none";
+	}
 }
 
-var btn_action3 = document.getElementById("forget");
-btn_action3.onclick = function() {
-	btn_action3.classList.toggle("open");
-	btn_action.classList.remove("open");
-	btn_action2.classList.remove("open");
-		z.classList.toggle("show");
-		x.classList.remove("show");
-		y.classList.remove("show");
+function CheckForgot() {
+	var check = document.getElementById("forgot");
+	if(check.checked == true) {
+		y.style.display = "none";
+		x.style.display = "none";
+		z.style.display = "block";
+	}
+	else {
+		x.style.display = "none";
+		y.style.display = "none";
+		z.style.display = "none";
+	}
 }
 
 function ForgotPass() {
-	btn_action3.classList.toggle("open");
-	btn_action.classList.remove("open");
-	btn_action2.classList.remove("open");
-		z.classList.toggle("show");
-		x.classList.remove("show");
-		y.classList.remove("show");
+	var check = document.getElementById("forgot");
+	check.checked = true;
+	y.style.display = "none";
+	x.style.display = "none";
+	z.style.display = "block";
 }
 
 function Login() {

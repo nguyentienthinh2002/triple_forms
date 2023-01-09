@@ -26,17 +26,21 @@
 						<div class="account_img">
 							<img src="../assets/img/background2.jpg" width="100%" height="100%">
 							<div class="account_content">
-								<button class="account_button" id="login">
-									<i class="fa fa-solid fa-user"></i>Login</button>
-								<button class="account_button" id="register"><i class="fa fa-solid fa-pen"></i>Register</button>
-								<button class="account_button" id="forget">
-									<i class="fa fa-solid fa-lock"></i>Forgot password ?</button>
+								<label class = "account_label">
+									<input type="radio" id="login" name="check" checked="checked" onclick="CheckLogin()">
+									<div class="account_check"><i class="fa fa-solid fa-user"></i>Login</div></label>
+								<label class = "account_label">
+									<input type="radio" id="register" name="check" onclick="CheckRegister()"> 
+									<div class="account_check"><i class="fa fa-solid fa-pen"></i>Register</div></label>
+								<label class = "account_label">
+									<input type="radio" id="forgot" name="check" onclick="CheckForgot()">
+									<div class="account_check"><i class="fa fa-solid fa-lock"></i>Forgot</div></label>
 							</div>
 						</div>
 					</div>
 				<!-- /ACTION -->
 				<!-- LOGIN -->
-					<div id="account_login">
+					<div id="account_login" class="show">
 						<div class="login_title">
 							<h1>Login Here</h1>
 						</div>
